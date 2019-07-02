@@ -8,11 +8,10 @@
 <h4>
     {{$post->body}}
 </h4>
-<small>Written on {{$post->created_at}}</small>
+<small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
 <hr>
 <a href="/post" class="btn btn-dark">Go Back</a>
 <a href="/post/{{$post->id}}/edit" class="btn btn-primary">Edit</a> 
-<br>
 <form action="{{ url('post', $post->id) }}" method="POST">
     @csrf
     @method('DELETE')
