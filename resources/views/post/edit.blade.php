@@ -5,7 +5,7 @@
 
 @section('content')
     <h1>Edit</h1> 
-    <form action="{{ url('post',$post->id) }}" method="POST">
+    <form action="{{ url('post',$post->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <div class="form-group">
@@ -13,6 +13,8 @@
             <input type="text" class="form-control" placeholder="{{$post->title}}" name="title" required>
             <label for="formGroupExampleInput">Body: </label> 
             <textarea rows="3" type="text" class="form-control" placeholder="{{$post->body}}" name="body" required></textarea>
+            <br>
+            <input type="file" name="cover_image">
             <br>
 
             <button type="submit" class="btn btn-primary">Submit</button>

@@ -5,6 +5,8 @@
 
 @section('content')
 <h1>{{$post->title}}</h1> 
+<img style="width: 200px; height: 200px; box-shadow: 2px 2px 4px #000000; border-radius: 5px;" src="/storage/cover_images/{{$post->cover_image}}">
+<hr>
 <h4>
     {{$post->body}}
 </h4>
