@@ -9,7 +9,7 @@
             <div class="card">
     			<div class="card-header"><h3>This is the fvcking About page</h3></div>
     			<div class="card-body">
-    				<p>Gamaya ayo ko notch hehehe :'(</p>
+    				<p>qt kaayo ko hehehe :')</p>
     			</div>
     		</div>
     	</div>
